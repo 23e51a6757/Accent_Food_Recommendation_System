@@ -14,8 +14,8 @@ Detect the native accent from Indian English speech and recommend culturally rel
 ###  Dataset
 - Indic Accent DB (from Hugging Face)
 
-### Deployment Link
-🔗 https://YOUR-GRADIO-LINK
+###  Deployment Link
+https://f4b58734a658ac499b.gradio.live/
 
 ###  Files Included
 - Notebook
