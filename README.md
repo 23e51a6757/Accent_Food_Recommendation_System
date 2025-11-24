@@ -1,87 +1,34 @@
-#  Accent-Based Food Recommendation System  
-Using **HuBERT + MFCC + SVM**
+# Accent-Based Indian Food Recommendation System 
 
-## Overview
-This project identifies the **native language accent of Indian English speakers** using speech signals and recommends food based on the predicted region.
+### Team Members
+- G. Lakshmi Haasitha (23E51A6757)
+- A. Manoj Kumar (24E55A6701)
 
-The system uses:
+###  Project Goal
+Detect the native accent from Indian English speech and recommend culturally relevant food based on the predicted accent.
 
-- **MFCC Features + Traditional Classifier**
-- **HuBERT Embeddings (Self-Supervised Speech Model)**
-- **SVM Classifier with 98.33% Accuracy**
+###  Models Used
+- MFCC + SVM (Accuracy: 81.96%)
+- HuBERT Embeddings + ML Classifier (Accuracy: 98.33%)
 
----
+###  Dataset
+- Indic Accent DB (from Hugging Face)
 
-##  Features
+### Deployment Link
+🔗 https://YOUR-GRADIO-LINK
 
-✔ Accent Detection  
-✔ Food Recommendation  
-✔ HuBERT & MFCC Comparison  
-✔ Works on Sentence & Word-Level Speech  
-✔ Simple Gradio Demo UI  
+###  Files Included
+- Notebook
+- Model files (.pkl, .npy)
+- Report
+- Demo Screenshots
 
----
+###  How to Run
+1. Install dependencies (`pip install librosa transformers scikit-learn gradio torch`)
+2. Load the notebook
+3. Run cells to test audio or launch UI.
 
-##  Dataset
-
-Dataset Used: **IndicAccentDb (HuggingFace)**  
-Contains recordings from Indian speakers (Telugu, Tamil, Hindi, Malayalam, Kannada, Bengali).
-
----
-
-## Model Performance
-
-| Model | Accuracy |
-|-------|----------|
-| MFCC + SVM | **81.96%** |
-| HuBERT Embeddings + SVM | **98.33%** |
-
----
-
-##  Technologies
-
-| Component | Tool |
-|----------|-------|
-| Language | Python |
-| ML/DL | Scikit-learn, Transformers |
-| Audio Processing | Librosa |
-| Deployment | Gradio UI |
-
----
-
-## ▶ How to Run
-
-1. Open `Accent_Food_Recommendation.ipynb` in Google Colab.
-2. Install requirements:
-   ```bash
-   pip install -r requirements.txt
-
-Run all cells to:
-
-Load dataset
-Extract MFCC & HuBERT features
-Train models
-
-Evaluate and generate results
-
-Launch the Gradio app:
-
-demo.launch()
-
-Sample Output
-Input: English speech sample
-Predicted Accent: Telugu-English Accent
-Suggested Food: Hyderabadi Biryani, Pesarattu, Gongura Pachadi
-
-Files Included
-File	Description
-Accent_Food_Recommendation.ipynb	Main notebook
-hubert_model.pkl	Trained HuBERT-based SVM model
-mfcc_model.pkl	Trained MFCC-based SVM model
-hubert_embeddings.npy	Saved HuBERT embeddings (subset)
-mfcc_features.npy	Saved MFCC features (full dataset)
-Project_Report.docx	Detailed project report
-README.md	This documentation
-requirements.txt	Required dependencies
-
+###  Results
+- MFCC model accuracy: 81.96%
+- HuBERT model accuracy: 98.33%
 
