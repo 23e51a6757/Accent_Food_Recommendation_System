@@ -1,4 +1,4 @@
-# Accent-Based Indian Food Recommendation System 
+# Accent-Based Food Recommendation System 
 
 ### Team Members
 - G. Lakshmi Haasitha (23E51A6757)
